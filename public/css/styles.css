@@ -60,6 +60,8 @@ h2{
 .precio{
     font-size: 18px;
     margin-top: 5px;
+    width: 30%;
+    text-align: justify;
 }
 
 .descrip,
@@ -76,6 +78,14 @@ h2{
 
 .desc{
     color: #39b54a;
+    width: 70%;
+    text-align: justify;
+    padding: 5px;
+}
+
+.precioYdescFlex{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 p{
@@ -154,19 +164,39 @@ main section article img{
 
 article div.main-article{
     width: 100%;
-    margin-top: 1px;
+    margin-top: 1px; /**verrr*/
     padding: 20px;
     background-color: #ffffff;
 
 }
 
-
+/** revisar 
 article div.main-article i{
 color: #39b54a;
 border: 1px solid #39b54a;
 border-radius: 60%;
 padding: 6px 16px 18px 6px;
+}**/
+
+.product-desc-box > .product-delivery-icon{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
 }
+
+.product-desc-box {
+    position: relative;
+}    
+
 
 
 /**
@@ -175,6 +205,10 @@ padding: 6px 16px 18px 6px;
 @media(min-width: 768px) and (max-width:991px){
     .producto article{
        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .descrip{
+        display: block;
     }
 
     div.burger-menu{
@@ -197,6 +231,10 @@ padding: 6px 16px 18px 6px;
 @media(min-width: 1024px) and (max-width:1919px){
     .producto article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .descrip{
+        display: block;
     }
 
     div.burger-menu{
