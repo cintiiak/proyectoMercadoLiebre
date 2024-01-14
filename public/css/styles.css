@@ -156,6 +156,11 @@ main section article{
     margin: 10px;
     border-top: 1px solid #ebebeb;
     padding: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
 }
 
 main section article img{
@@ -197,6 +202,11 @@ padding: 6px 16px 18px 6px;
     position: relative;
 }    
 
+.producto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
 /**
@@ -205,6 +215,8 @@ padding: 6px 16px 18px 6px;
 @media(min-width: 768px) and (max-width:991px){
     .producto article{
        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+       flex-basis: 48%; /* Ajuste para dejar espacio entre los elementos */
+       margin: 5px; /* Espacio entre los elementos */
     }
 
     .descrip{
@@ -223,6 +235,50 @@ padding: 6px 16px 18px 6px;
         display: block;
     }
     
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .imgLogo,
+    .search,
+    .titulo {
+            flex-basis: 27%; /* Reduzco ligeramente el porcentaje para dejar espacio entre los elementos */
+            box-sizing: border-box; /* Incluye el relleno y el borde en el ancho especificado */
+    }
+    
+    .search input {
+        width: 70%;
+        height: 40px;
+        border-radius: 10px;
+        border: #666;
+    }
+
+    .search button {
+        width: 20%;
+        height: 40px;
+        border: #666;
+    }
+    
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        flex-basis: 50%; /* Reduzco ligeramente el porcentaje para dejar espacio entre los elementos */
+        box-sizing: border-box;
+        justify-content: space-around;
+    }
+
+    nav ul a{
+        margin: 3px;
+
+    }
+
+
 }
 
 /**
@@ -231,6 +287,8 @@ padding: 6px 16px 18px 6px;
 @media(min-width: 1024px) and (max-width:1919px){
     .producto article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex-basis: 23%; /* Ajuste para dejar espacio entre los elementos */
+        margin: 5px; /* Espacio entre los elementos */
     }
 
     .descrip{
@@ -248,6 +306,87 @@ padding: 6px 16px 18px 6px;
     .navDos{
         display: block;
     }
+
+    h2{
+        text-align: left;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .imgLogo,
+    .search,
+    .titulo {
+            flex-basis: 27%; /* Reduzco ligeramente el porcentaje para dejar espacio entre los elementos */
+            box-sizing: border-box; /* Incluye el relleno y el borde en el ancho especificado */
+    }
+    
+    .search input {
+        width: 70%;
+        height: 40px;
+        border-radius: 10px;
+        border: #666;
+    }
+
+    .search button {
+        width: 20%;
+        height: 40px;
+        border: #666;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        flex-basis: 50%; /* Reduzco ligeramente el porcentaje para dejar espacio entre los elementos */
+        box-sizing: border-box;
+        justify-content: space-around;
+    }
+
+    nav ul a{
+        margin: 3px;
+
+    }
+
+
+    
+
 }
+
+/**
+    Navegación en mobile
+**/
+@media(max-width: 480px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .imgLogo,
+    .search {
+        flex-basis: 48%; /* Reduzco ligeramente el porcentaje para dejar espacio entre los elementos */
+        box-sizing: border-box; /* Incluye el relleno y el borde en el ancho especificado */
+    }
+
+    .search input {
+        width: 70%;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .search button {
+        width: 20%;
+        height: 40px;
+    }
+
+}
+
 
 
