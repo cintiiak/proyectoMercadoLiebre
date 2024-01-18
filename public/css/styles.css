@@ -80,7 +80,8 @@ h2{
     color: #39b54a;
     width: 70%;
     text-align: justify;
-    padding: 5px;
+    margin-top: 6px;
+    padding-left: 30px ;
 }
 
 .precioYdescFlex{
@@ -169,7 +170,7 @@ main section article img{
 
 article div.main-article{
     width: 100%;
-    margin-top: 1px; /**verrr*/
+    /**margin-top: 1px; /**verrr*/
     padding: 20px;
     background-color: #ffffff;
 
@@ -194,7 +195,7 @@ padding: 6px 16px 18px 6px;
     border-radius: 50%;
     position: absolute;
     right: 20px;
-    top: -15px;
+    top: -30px;
     color: #39b54a;
 }
 
@@ -293,6 +294,7 @@ padding: 6px 16px 18px 6px;
 
     .descrip{
         display: block;
+        margin-top: 6px;
     }
 
     div.burger-menu{
@@ -353,9 +355,6 @@ padding: 6px 16px 18px 6px;
         margin: 3px;
 
     }
-
-
-    
 
 }
 
