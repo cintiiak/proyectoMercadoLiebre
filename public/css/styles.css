@@ -48,6 +48,7 @@ header div.imgLogo{
 .navDos{
     padding: 10px;
     display: none;
+    text-align: right;
 }
 
 h2{
