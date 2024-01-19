@@ -66,28 +66,23 @@
     </section>
     
     <main>
-        <fieldset>
-            <form>
-              <h4>Login</h4>
-        
+        <fieldset class="login">
+            <form class="formLogin">
+                    
               <div>
-                <label for="name">Nombre:
-                    <input type="text" id="name" name="nombre" 
-                    placeholder="Escriba su nombre">
+                    <input class="inputLogin" type="text" id="name" name="nombre" 
+                    placeholder="Nombre de usuario">
                     <span class="feedback"></span>
-                </label>
               </div>
           
               <div>
-                <label for="password">Contraseña:
-                    <input type="text" id="password" name="contraseña" 
-                    placeholder="Escriba su contraseña">
+                    <input class="inputLogin" type="text" id="password" name="contraseña" 
+                    placeholder="Contraseña">
                     <span class="feedback"></span>
-                </label>
               </div>
 
               <div>
-                <button type="submit">Enviar</button>
+                <button class="enviarL" type="submit" formaction="/">Enviar</button>
               </div>
 
             </form>

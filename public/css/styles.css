@@ -212,7 +212,8 @@ padding: 6px 16px 18px 6px;
 
 /*formulario*/
 fieldset{
-    background-color: rgba(58, 156, 201, 0.562);
+    background-image: url("https://img.freepik.com/fotos-premium/fondo-colorido-fondo-blanco-fondo-verde_679635-309.jpg?w=826");
+    background-size: cover;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     font-variant: small-caps;
@@ -221,12 +222,101 @@ fieldset{
 }
 
 form{
-    padding: 25px;
+    padding: 5%;
 }
 
 h4{
     text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(0, 38, 255), 0 0 20px rgb(0, 0, 0), 0 0 5px rgb(24, 0, 238);
 }
+
+div.formulario{
+    margin: 10px;
+}
+
+div.botones{
+    text-align: center;
+}
+
+button.enviar{
+    background-color: #57ff51;
+    width: 10%;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+button.limpiar{
+    background-color: #f7d883;
+    width: 10%;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+button:hover{
+    background-color: rgb(0, 255, 255);
+}
+
+input[type="text"]{
+    height: 20px;
+    width: 30%;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+input[type="email"]{
+    height: 20px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1900ff; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 3px #f70ee3; /* Agrega una sombra al enfocar */
+}
+
+input:hover {
+    cursor: pointer; /**Cambiar el estilo del cursor al pasar sobre el input*/
+}
+
+.formCheckbox{
+    display: block;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+/**
+   Form Login
+*/
+
+fieldset.login{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/013/732/058/non_2x/soft-color-gradient-background-for-background-web-cover-and-more-use-free-vector.jpg");
+    background-size: cover;
+}
+
+.formLogin{
+    text-align: center;
+}
+
+input.inputLogin{
+    margin: 20px;
+    height: 40px;
+    width: 500px;
+}
+
+button.enviarL{
+    background-color: #e0ce30;
+    width: 15%;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
 
 /**
    Navegacion en tablets
