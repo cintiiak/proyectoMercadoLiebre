@@ -210,6 +210,23 @@ padding: 6px 16px 18px 6px;
     justify-content: space-between;
 }
 
+/*formulario*/
+fieldset{
+    background-color: rgba(58, 156, 201, 0.562);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-variant: small-caps;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+form{
+    padding: 25px;
+}
+
+h4{
+    text-align: center;
+}
 
 /**
    Navegacion en tablets

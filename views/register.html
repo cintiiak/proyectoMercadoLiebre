@@ -66,7 +66,94 @@
     </section>
 
     <main>
-       
+        <fieldset>
+            <form>
+              <h4>Formulario de Registro</h4>
+        
+              <div>
+                <label for="name">Nombre:
+                    <input type="text" id="name" name="nombre" 
+                    placeholder="Escriba su nombre">
+                    <span class="feedback"></span>
+                </label>
+              </div>
+
+              <div>
+                <label for="lastname">Apellido:
+                    <input type="text" id="lastname" name="apellido" 
+                        placeholder="Escriba su apellido">
+                    <span class="feedback"></span>
+                </label>
+              </div>
+
+              <div>
+                <label for="email">Email:
+                    <input type="email" id="email" name="correo" 
+                        placeholder="Escriba su email">
+                    <span class="feedback"></span>
+                </label>
+              </div>
+
+              <div>
+                <label for="date">Fecha de Nacimiento:
+                    <input type="date" id="date" name="fecha" >
+                </label>
+              </div>
+
+              <div>
+                <label for="home">Domicilio:
+                    <input type="text" id="home" name="domicilio" 
+                        placeholder="Escriba su domicilio">
+                    <span class="feedback"></span>
+                </label>
+              </div>
+
+              <div>
+                <label for="profile">Perfil de Usuario:
+                    <input type="radio" id="profile" name="perfil" value="comprar"> Comprar
+                    <input type="radio" id="profile" name="perfil" value="vender"> Vender
+                </label>
+              </div>
+
+              <div>
+                <label for="category">Categorías de Interés:
+                    <input type="checkbox" id="category" name="categoria" value="electro"> Electro
+                    <input type="checkbox" id="category" name="categoria" value="moda"> Moda
+                    <input type="checkbox" id="category" name="categoria" value="hogar"> Hogar
+                    <input type="checkbox" id="category" name="categoria" value="jugeteria"> Jugetería
+                    <input type="checkbox" id="category" name="categoria" value="vidaSana"> Vida Sana
+                </label>
+              </div>
+
+              <div>
+                <label for="photo">Foto de Usuario:
+                    <input type="file" accept=".jpg" id="photo" name="foto"> 
+                </label>
+              </div>
+           
+              <div>
+                <label for="password">Contraseña:
+                    <input type="text" id="password" name="contraseña" 
+                    placeholder="Escriba su contraseña">
+                    <span class="feedback"></span>
+                </label>
+              </div>
+
+              <div>
+                <label for="password">Confirmar contraseña:
+                    <input type="text" id="password" name="contraseña" 
+                    placeholder="Escriba su contraseña nuevamente">
+                    <span class="feedback"></span>
+                </label>
+              </div>
+
+              <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+              </div>
+
+            </form>
+        </fieldset>
     </main>
 
     <footer>
