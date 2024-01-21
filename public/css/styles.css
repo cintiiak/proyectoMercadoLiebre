@@ -18,7 +18,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-
 header{
     background-color: #EAC926;
     padding: 20px;
@@ -51,100 +50,9 @@ header div.imgLogo{
     text-align: right;
 }
 
-h2{
-   font-size: 24px; 
-   color: #666;
-   text-align: center;
-   padding: 10px;
-}
-
-.precio{
-    font-size: 18px;
-    margin-top: 5px;
-    width: 30%;
-    text-align: justify;
-}
-
-.descrip,
-.desc{
-    font-size:16px;
-    font-weight: normal;
-}
-
-.descrip{
-    color: #666;
-    margin-top: 20px;
-    display: none;
-}
-
-.desc{
-    color: #39b54a;
-    width: 70%;
-    text-align: justify;
-    margin-top: 6px;
-    padding-left: 30px ;
-}
-
-.precioYdescFlex{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-p{
-    font-size: 12px;
-}
-
-div.burger-menu{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    width: fit-content;
-    padding: 1rem;
-    background-color: #1259c3;
-    color: white;
-    border-radius: 5px;
-}
-
-footer{
-    background-color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 12px;
-    color: rgb(117, 116, 116);
-    width: 100%;
-}
-
-.iconFooter{
-    font-size: 2em;
-    color:#1259c3;
-    margin: 10px;
-    margin-bottom: 10px;
-}
-
-h3{
-    font-size: 18px; 
-    color: #666;
-    margin-bottom: 2px;
-}
-
-p{
-    font-size: 12px;
-}
-
-.copyright{
-    margin: 30px;
-    text-align: left;
-    margin-left: 10px;
-   
-}
-
-.footerSecciones{
-    margin: 40px;
-}
-
-section.banner img{
-    width: 100%;
-}
+/*
+    Productos
+*/
 
 main{
     width: 90%;
@@ -209,7 +117,115 @@ padding: 6px 16px 18px 6px;
     justify-content: space-between;
 }
 
-/*formulario*/
+h2{
+   font-size: 24px; 
+   color: #666;
+   text-align: center;
+   padding: 10px;
+}
+
+.precio{
+    font-size: 18px;
+    margin-top: 5px;
+    width: 30%;
+    text-align: justify;
+}
+
+.descrip,
+.desc{
+    font-size:16px;
+    font-weight: normal;
+}
+
+.descrip{
+    color: #666;
+    margin-top: 20px;
+    /*display: none; */
+}
+
+.desc{
+    color: #39b54a;
+    width: 70%;
+    text-align: justify;
+    margin-top: 6px;
+    padding-left: 30px ;
+}
+
+.precioYdescFlex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    font-size: 12px;
+}
+
+.producto article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+}
+
+div.burger-menu{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: fit-content;
+    padding: 1rem;
+    background-color: #1259c3;
+    color: white;
+    border-radius: 5px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+
+/*
+    Footer
+*/
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: rgb(117, 116, 116);
+    width: 100%;
+}
+
+.iconFooter{
+    font-size: 2em;
+    color:#1259c3;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 18px; 
+    color: #666;
+    margin-bottom: 2px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.copyright{
+    margin: 30px;
+    text-align: left;
+    margin-left: 10px;
+   
+}
+
+.footerSecciones{
+    margin: 40px;
+}
+
+
+/*
+    Formulario
+*/
+
 fieldset{
     background-image: url("https://img.freepik.com/fotos-premium/fondo-colorido-fondo-blanco-fondo-verde_679635-309.jpg?w=826");
     background-size: cover;
@@ -327,14 +343,16 @@ button.enviarL:hover{
 */
 @media(min-width: 768px) and (max-width:991px){
     .producto article{
-       box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
        flex-basis: 48%; /* Ajuste para dejar espacio entre los elementos */
        margin: 5px; /* Espacio entre los elementos */
     }
 
+    /*
     .descrip{
         display: block;
     }
+    */
 
     div.burger-menu{
        display: none;
@@ -399,15 +417,16 @@ button.enviarL:hover{
 */
 @media(min-width: 1024px) and (max-width:1919px){
     .producto article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+       /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
         flex-basis: 23%; /* Ajuste para dejar espacio entre los elementos */
         margin: 5px; /* Espacio entre los elementos */
     }
 
+    /*
     .descrip{
         display: block;
         margin-top: 6px;
-    }
+    } */
 
     div.burger-menu{
        display: none;
@@ -479,7 +498,7 @@ button.enviarL:hover{
     }
 
     .iconFooter:hover{
-        color: #57ff51;
+        color: rgb(77, 0, 201);
     }
 
 }
@@ -510,6 +529,17 @@ button.enviarL:hover{
         width: 20%;
         height: 40px;
     }
+
+    .descrip {
+        display: none; 
+        transition: display 0.3s ease; /* agrega una transición suave para el cambio de display */
+    }
+
+    article:hover .descrip{
+        display: block; /* muestra la descripción cuando el mouse está sobre el contenedor del articulo */
+    }
+
+    
 
 }
 
