@@ -92,6 +92,10 @@ border-radius: 60%;
 padding: 6px 16px 18px 6px;
 }**/
 
+.product-desc-box {
+    position: relative;
+} 
+
 .product-desc-box > .product-delivery-icon{
     display: block;
     font-size: 16px;
@@ -107,21 +111,22 @@ padding: 6px 16px 18px 6px;
     color: #39b54a;
 }
 
-.product-desc-box {
-    position: relative;
-}    
+.product-desc-box > .product-delivery-icon:hover{
+    transform: rotate(-90deg);
+    transition: 2s ease;
+}
+
+h2{
+    font-size: 24px; 
+    color: #666;
+    text-align: center;
+    padding: 10px;
+}
 
 .producto{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-h2{
-   font-size: 24px; 
-   color: #666;
-   text-align: center;
-   padding: 10px;
 }
 
 .precio{
@@ -532,7 +537,10 @@ button.enviarL:hover{
 
     .descrip {
         display: none; 
-        transition: display 0.3s ease; /* agrega una transición suave para el cambio de display */
+        transition: display 0.3s ease; /* Transición suave para el cambio de display 
+                                          Ease: Especifica un efecto de transición con un 
+                                          inicio lento, luego rápido y luego lento
+                                       */
     }
 
     article:hover .descrip{
