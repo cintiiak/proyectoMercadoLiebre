@@ -174,7 +174,6 @@ article div.main-article{
     /**margin-top: 1px; /**verrr*/
     padding: 20px;
     background-color: #ffffff;
-
 }
 
 /** revisar 
@@ -315,6 +314,11 @@ button.enviarL{
     border-radius: 10px;
     padding: 10px;
     text-align: center;
+}
+
+button.enviarL:hover{
+    background-color: #0022AA;
+    color: white;
 }
 
 
@@ -462,6 +466,20 @@ button.enviarL{
     nav ul a{
         margin: 3px;
 
+    }
+
+    .containerFooter{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footerSecciones{
+        flex-basis: 27%;
+    }
+
+    .iconFooter:hover{
+        color: #57ff51;
     }
 
 }
