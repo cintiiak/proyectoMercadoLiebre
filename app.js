@@ -1,14 +1,20 @@
 const express = require ('express');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 3000;
-
 /**
+ * const port = process.env.PORT || 3000;
+
  * Metodo listen para levantar el servidor 
- */
+ 
 app.listen (3000,()=>{
     console.log(`Servidor corriendo.. Listening on port http://localhost:${port}`)
 })
+
+*/
+
+const PORT  = process.env.PORT || 3000;
+
+app.listen(PORT,() => console.log(`Server up on PORT:  http://localhost:${PORT}`))
 
 /**
  * Path del Home 
