@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+    <link rel="icon" href="/images/logo-mercado-liebre.svg" type="image/x-icon">
     <title>Mercado Liebre</title>
 </head>
 <body>
@@ -20,13 +21,11 @@
             <div class="imgLogo">
                 <img src="/images/logo-mercado-liebre.svg" alt="Logo">
             </div>
-    
-            <div class="search">
-                <input type="text" placeholder=" Buscar productos, marcas..">
-                <button type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
+
+            <form action="" method="get" class="search">
+                <input type="search" placeholder="Buscar productos, marcas, etc.">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
 
             <div>
                 <p class="titulo">
@@ -36,24 +35,19 @@
             </div>
         </div>
 
-        <nav>
-                <ul class="navUno">
-                    <a href="/">Ofertas</a>
-                    <a href="/">Tiendas Oficiales</a>
-                    <a href="/">Vender</a>
-                    <a href="/">Ayuda</a>
-                </ul>
-    
-                <ul class="navDos">
-                    <a href="/register">Crea tu cuenta</a>
-                    <i class="fas fa-id-card"></i>
-                    
-                    <a href="/login">Ingresa</a>
-                    <i class="fas fa-sign-in-alt"></i>
-                                   
-                    <a href="/">Mis compras </a>
-                    <i class="fas fa-shopping-basket"></i>
-                </ul>           
+        <nav class="navPrincipal">
+            <ul class="navLeft">
+               <li><a href="/">Ofertas</a></li> 
+               <li><a href="/">Tiendas Oficiales</a></li>
+               <li><a href="/">Vender</a></li>
+               <li><a href="/">Ayuda</a></li> 
+            </ul>
+
+            <ul class="navRight">
+                <li><a href="/register">Crea tu cuenta <i class="fas fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
         </nav>
 
         <div class="burger-menu">
