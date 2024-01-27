@@ -1,17 +1,17 @@
+/**
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+**/
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-
-/**
-Amarillo: #EAC926;
-Azul: #03264C;
-Celeste: #1259c3;
-Gris oscuro: #666;
-Gris claro: #ebebeb;
-Verde: #39b54a;
-**/
 
 body{
     background-color: #ebebeb;
@@ -26,11 +26,36 @@ header{
 header div.imgLogo{
     width: 40%;
     padding: 10px;
-
 }
 
-.search{
+.search {
     padding: 10px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.search button,
+.search button i :hover {
+    cursor: pointer; 
+} 
+    
+.search button,
+.search button i {
+    border: none;
+    background-color: #ffffff;
+    font-size: 16px;
+    padding-right: 2px;
+    border-radius: 0px 5px 5px 0px;
+}
+    
+input[type="search"]{
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+}
+
+input[type="search"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffffff;
 }
 
 .titulo{
@@ -39,25 +64,28 @@ header div.imgLogo{
     font-size: 16px;
 }
 
-.navUno{
-    padding: 10px;
-    display: none;
+.navPrincipal ul {
+    list-style: none;
 }
 
-.navDos{
-    padding: 10px;
-    display: none;
-    text-align: right;
+.navPrincipal li {
+    display: inline-block;
 }
+
+.navPrincipal a {
+    text-decoration: none;
+    margin: 5px 5px;
+    color: black;
+}
+
 
 /*
-    Productos
+  --- Productos ---
 */
-
 main{
     width: 90%;
     background-color: #ebebeb;
-    padding: 5px;
+    padding: 15px;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -65,8 +93,7 @@ main{
 main section article{
     margin: 10px;
     border-top: 1px solid #ebebeb;
-    padding: 15px;
-
+    
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -83,14 +110,6 @@ article div.main-article{
     padding: 20px;
     background-color: #ffffff;
 }
-
-/** revisar 
-article div.main-article i{
-color: #39b54a;
-border: 1px solid #39b54a;
-border-radius: 60%;
-padding: 6px 16px 18px 6px;
-}**/
 
 .product-desc-box {
     position: relative;
@@ -165,8 +184,12 @@ p{
     font-size: 12px;
 }
 
-.producto article:hover{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+article {
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave a la sombra */
+}
+
+article:hover{
+   box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 div.burger-menu{
@@ -184,11 +207,9 @@ section.banner img{
     width: 100%;
 }
 
-
 /*
-    Footer
+  --- Footer ---
 */
-
 footer{
     background-color: white;
     text-align: center;
@@ -202,7 +223,7 @@ footer{
     font-size: 2em;
     color:#1259c3;
     margin: 10px;
-    margin-bottom: 10px;
+   /* margin-bottom: 10px; */
 }
 
 h3{
@@ -219,7 +240,6 @@ p{
     margin: 30px;
     text-align: left;
     margin-left: 10px;
-   
 }
 
 .footerSecciones{
@@ -228,29 +248,28 @@ p{
 
 
 /*
-    Formulario
+  --- Formulario ---
 */
-
-fieldset{
+form.form-container{
     background-image: url("https://img.freepik.com/fotos-premium/fondo-colorido-fondo-blanco-fondo-verde_679635-309.jpg?w=826");
     background-size: cover;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     font-variant: small-caps;
-    margin: 30px;
     border-radius: 15px;
-}
-
-form{
     padding: 5%;
+    width: 50%;
+    margin: 10px;
+    margin-left: 25%;
 }
 
 h4{
     text-align: center;
     font-family: cursive;
-    font-size: 20px;
+    font-size: 23px;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgb(0, 38, 255), 0 0 20px rgb(0, 0, 0), 0 0 5px rgb(24, 0, 238);
+    text-shadow: 2px 2px 4px rgb(28, 179, 8), 0 0 10px rgb(0, 0, 0), 0 0 5px rgb(0, 255, 21);
+    margin-bottom: 30px;
 }
 
 div.formulario{
@@ -261,48 +280,64 @@ div.botones{
     text-align: center;
 }
 
+button{
+    border: none;
+}
+
 button.enviar{
-    background-color: #57ff51;
-    width: 10%;
-    border-radius: 20px;
+    background-color: #42e28a;
+    width: 25%;
+    border-radius: 5px;
     padding: 10px;
     text-align: center;
 }
 
 button.limpiar{
-    background-color: #f7d883;
-    width: 10%;
-    border-radius: 20px;
+    background-color: #dae44e;
+    width: 25%;
+    border-radius: 5px;
     padding: 10px;
     text-align: center;
 }
 
-button:hover{
-    background-color: rgb(0, 255, 255);
+button.enviar:hover,
+button.limpiar:hover{
+    background-color: #1b40b9;
+    color: white;
 }
 
-input[type="text"]{
-    height: 20px;
-    width: 30%;
-    border-radius: 8px;
+input{
+    border: none;
+}
+
+input[type="text"],[type="email"],
+[type="password"],[type="date"]{
+    height: 10%;
+    width: 100%;
+    border-radius: 4px;
     padding: 10px;
+    margin-top: 5px;
 }
 
-input[type="email"]{
-    height: 20px;
-    border-radius: 8px;
-    padding: 5px;
+input[type="file"]{
+    height: 10%;
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: white;
+    margin-top: 5px;
 }
 
 input:focus {
     outline: none;
     border-color: #1900ff; /* Cambia el color del borde al enfocar */
-    box-shadow: 0 0 3px #f70ee3; /* Agrega una sombra al enfocar */
+    box-shadow: 0 0 5px rgba(212, 38, 255, 0.658); /* Agrega una sombra al enfocar */
 }
 
+/*
 input:hover {
-    cursor: pointer; /**Cambiar el estilo del cursor al pasar sobre el input*/
-}
+    cursor: pointer; /**Cambiar el estilo del cursor al pasar sobre el input
+} */
 
 .formCheckbox{
     display: block;
@@ -311,28 +346,29 @@ input:hover {
 }
 
 /**
-   Form Login
+  --- Formulario Login ---
 */
 
-fieldset.login{
+form.formLogin{
     background-image: url("https://static.vecteezy.com/system/resources/previews/013/732/058/non_2x/soft-color-gradient-background-for-background-web-cover-and-more-use-free-vector.jpg");
     background-size: cover;
-}
-
-.formLogin{
     text-align: center;
+    border-radius: 15px;
+    padding: 5%;
+    width: 50%;
+    margin: 10px;
+    margin-left: 25%;
 }
 
-input.inputLogin{
-    margin: 20px;
-    height: 40px;
-    width: 500px;
+.inputLogin{
+    margin-bottom: 10px;
 }
 
 button.enviarL{
-    background-color: #e0ce30;
-    width: 15%;
-    border-radius: 10px;
+    background-color: #42e28a;
+    color: rgb(0, 0, 0);
+    width: 50%;
+    border-radius: 5px;
     padding: 10px;
     text-align: center;
 }
@@ -342,15 +378,14 @@ button.enviarL:hover{
     color: white;
 }
 
-
 /**
-   Navegacion en tablets
+  --- Navegacion en tablets ---
 */
 @media(min-width: 768px) and (max-width:991px){
     .producto article{
       /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
-       flex-basis: 48%; /* Ajuste para dejar espacio entre los elementos */
-       margin: 5px; /* Espacio entre los elementos */
+       flex-basis: 48%; 
+       margin: 5px;
     }
 
     /*
@@ -363,14 +398,6 @@ button.enviarL:hover{
        display: none;
     }
 
-    .navUno{
-        display: block;
-    }
-
-    .navDos{
-        display: block;
-    }
-    
     .container{
         display: flex;
         flex-wrap: wrap;
@@ -380,14 +407,13 @@ button.enviarL:hover{
     .imgLogo,
     .search,
     .titulo {
-            flex-basis: 27%; /* Reduzco ligeramente el porcentaje para dejar espacio entre los elementos */
-            box-sizing: border-box; /* Incluye el relleno y el borde en el ancho especificado */
+            flex-basis: 27%; 
+            box-sizing: border-box;
     }
     
     .search input {
         width: 70%;
         height: 40px;
-        border-radius: 10px;
         border: #666;
     }
 
@@ -397,34 +423,32 @@ button.enviarL:hover{
         border: #666;
     }
     
-    nav{
+    .navPrincipal{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    nav ul{
-        flex-basis: 50%; /* Reduzco ligeramente el porcentaje para dejar espacio entre los elementos */
-        box-sizing: border-box;
-        justify-content: space-around;
+    button.enviar{
+        width: 100%;
+        margin: 10px;
     }
-
-    nav ul a{
-        margin: 3px;
-
+    
+    button.limpiar{
+        width: 100%;
+        margin: 10px;
     }
-
 
 }
 
 /**
-   Navegación en desktop (1200-min)
+  --- Navegación en desktop (1200-min) ---
 */
 @media(min-width: 1024px) and (max-width:1919px){
     .producto article{
        /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
-        flex-basis: 23%; /* Ajuste para dejar espacio entre los elementos */
-        margin: 5px; /* Espacio entre los elementos */
+        flex-basis: 23%; 
+        margin: 5px; 
     }
 
     /*
@@ -435,14 +459,6 @@ button.enviarL:hover{
 
     div.burger-menu{
        display: none;
-    }
-
-    .navUno{
-        display: block;
-    }
-
-    .navDos{
-        display: block;
     }
 
     h2{
@@ -458,38 +474,24 @@ button.enviarL:hover{
     .imgLogo,
     .search,
     .titulo {
-            flex-basis: 27%; /* Reduzco ligeramente el porcentaje para dejar espacio entre los elementos */
-            box-sizing: border-box; /* Incluye el relleno y el borde en el ancho especificado */
+            flex-basis: 27%; 
+            box-sizing: border-box;
     }
     
     .search input {
         width: 70%;
         height: 40px;
-        border-radius: 10px;
-        border: #666;
     }
 
     .search button {
-        width: 20%;
+        width: 10%;
         height: 40px;
-        border: #666;
     }
 
-    nav{
+    .navPrincipal{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-    }
-
-    nav ul{
-        flex-basis: 50%; /* Reduzco ligeramente el porcentaje para dejar espacio entre los elementos */
-        box-sizing: border-box;
-        justify-content: space-around;
-    }
-
-    nav ul a{
-        margin: 3px;
-
     }
 
     .containerFooter{
@@ -499,17 +501,32 @@ button.enviarL:hover{
     }
 
     .footerSecciones{
-        flex-basis: 27%;
+        flex-basis: 25%;
     }
 
     .iconFooter:hover{
-        color: rgb(77, 0, 201);
+        color: #39b54a;
+        animation: iconoFooter 3s ease;
+    }
+
+    @keyframes iconoFooter {
+        0% {
+            transform: rotateY(0deg);
+        }
+    
+        50% {
+            transform: rotateY(180deg);
+        }
+    
+        100% {
+            transform: rotateY(0deg);
+        }
     }
 
 }
 
 /**
-    Navegación en mobile
+  --- Navegación en mobile ---
 **/
 @media(max-width: 480px){
     .container{
@@ -547,7 +564,9 @@ button.enviarL:hover{
         display: block; /* muestra la descripción cuando el mouse está sobre el contenedor del articulo */
     }
 
-    
+    .navPrincipal{
+        display: none;
+    }    
 
 }
 
